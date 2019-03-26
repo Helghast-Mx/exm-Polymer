@@ -1,0 +1,42 @@
+<link rel="import" href="../../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../../bower_components/hijo-uno/hijo-uno.html">
+<link rel="import" href="../../bower_components/hijo-dos/hijo-dos.html">
+
+
+
+
+<dom-module id="exm-final-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+<h2>Hello [[prop1]]!</h2>
+
+<hijo-uno>Uno</hijo-uno>
+<hijo-uno>DOs</hijo-uno>
+<hijo-dos>hs</hijo-dos>
+
+  </template>
+
+  <script>
+    /**
+     * @customElement
+     * @polymer
+     */
+    class ExmFinalApp extends Polymer.Element {
+      static get is() { return 'exm-final-app'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'exm-final-app'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(ExmFinalApp.is, ExmFinalApp);
+  </script>
+</dom-module>

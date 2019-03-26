@@ -1,0 +1,6 @@
+{
+  "name": "exm-final",
+  "short_name": "exm-final",
+  "start_url": "/",
+  "display": "standalone"
+}
